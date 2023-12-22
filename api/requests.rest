@@ -1,0 +1,62 @@
+GET http://localhost:3000/games
+
+###
+
+POST http://localhost:3000/games/new
+Content-Type: application/json
+
+{
+    "format": "Commander",
+    "decks": [
+      {
+        "player": "James",
+        "commander": "Norin, The Wary",
+        "colours": ["Red"],
+        "strategy": ["Burn", "Chaos"],
+        "win": false,
+        "altWin": "",
+        "mulligans": 0,
+        "turn1Ring": false,
+        "kills": 0,
+        "firstBlood": false
+      },
+      {
+        "player": "Mills",
+        "commander": "Prosper, Tome-Bound",
+        "colours": ["Red", "Black"],
+        "strategy": ["Exile", "Treasures"],
+        "win": true,
+        "turn": 10,
+        "altWin": "",
+        "mulligans": 0,
+        "turn1Ring": false,
+        "kills": 3,
+        "firstBlood": false
+      },
+      {
+        "player": "Matt",
+        "commander": "Strefan, Maurer Progenitor",
+        "colours": ["Red", "Black"],
+        "strategy": ["Tribal"],
+        "win": false,
+        "altWin": "",
+        "mulligans": 0,
+        "turn1Ring": false,
+        "kills": 0,
+        "firstBlood": true
+      },
+      {
+        "player": "Paige",
+        "commander": "Syr Konrad, The Grim",
+        "colours": ["Black"],
+        "strategy": ["Aristocrats", "Self Mill"],
+        "win": false,
+        "altWin": "",
+        "mulligans": 0,
+        "turn1Ring": false,
+        "kills": 0,
+        "firstBlood": false
+      }
+    ],
+    "notes": ""
+}
